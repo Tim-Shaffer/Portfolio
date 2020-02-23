@@ -60,10 +60,13 @@ body {
 
 /* Set Heading Text Color  */
 h1 {
-  /* color: #4aaaa5; */
   font-family:  Georgia, Times, "Times New Roman", serif;
   font-size: 3rem;
 } 
+
+h4 {
+    font-size: 1rem;
+  } 
 
 /* Set Paragraph Text Color  */
 p {
