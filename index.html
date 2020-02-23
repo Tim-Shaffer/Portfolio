@@ -27,35 +27,46 @@
 
 </head>
 
-<body data-spy="scroll" data-offset="5" data-target="#navbar-pages">
+<body data-spy="scroll" data-offset="5" data-target="#mainListDiv">
 
-    <!-- Adding the Bootstrap NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" aria-label="Page navigation">
+    <header>
 
-        <div class="container-sm">
-        
-            <a href="index.html" class="btn btn-info btn-lg" role="button">Tim Shaffer</a>
-        
-            <ul id="navbar-pages" class="nav nav-pills justify-content-end">
-                <li class="nav-item">
-                <a class="nav-link" href="#about">About <span class="sr-only"></span></a>
-                </li>
-                
-                <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-                
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                
-            </ul>
+        <!-- Adding the Bootstrap NavBar -->
+        <nav class="navbar">
+
+            <div class="container">
             
-        </div>
+                <div class="logo">
+                    
+                    <a href="index.html">Tim Shaffer</a>
 
-    </nav>
+                </div>
 
-    <div>
+                <div id="mainListDiv" class="main_list">
+                    
+                    <ul class="navlinks">
+
+                        <li><a class="nav-link" href="#about">About</a></li>
+                            
+                        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div> 
+
+        <section class="home">
+        
+        </section>
 
         <section id="about">
             <!-- Main Content -->
@@ -376,6 +387,24 @@
             
         </div>  
     </footer>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+
+<!-- Function used to shrink nav bar removing paddings -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.navbar').addClass('affix');
+                $('.navbar').addClass('fixed-top');
+                // $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+            } else {
+                $('.navbar').removeClass('affix');
+                $('.navbar').removeClass('fixed-top');
+            }
+        });
+    </script>
 
 </body>
 
