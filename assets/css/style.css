@@ -1,0 +1,158 @@
+/* Body Content Styling */
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777777;
+  background: url("../images/concrete_seamless.png");
+  position: relative;
+}
+
+.navbar {
+  margin: .5em
+}
+
+/* section {
+  display: block;
+} */
+
+.header {
+  position: relative;
+  color: black;
+  text-align: center;
+}
+
+.slide-in-left {
+  animation: slideMe 3s ease-in;
+}
+
+@keyframes slideMe{
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: skewX(0deg) translateX(30px);
+    }
+    70%{
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+    80%{
+        transform: skew(0deg) translate(0);
+    }
+    90%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+#about {
+  margin-top: 5em;
+  padding: 100px 0 0 0;
+}
+
+#portfolio {
+  margin-top: 5em;
+  padding: 100px 0 0 0;
+}
+
+#contact {
+  margin-top: 5em;
+  padding: 100px 0 0 0;
+}
+
+
+/* Set Heading Text Color  */
+h1 {
+  /* color: #4aaaa5; */
+  font-family:  Georgia, Times, "Times New Roman", serif;
+} 
+
+/* Set Paragraph Text Color  */
+p {
+  color: #777777;
+}
+
+/* nav btn styling */
+.btn-info {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  max-width: 200px;
+  text-align: center;
+  padding: 15px;
+  border-color:  #dddddd;
+  font-family:  Georgia, Times, "Times New Roman", serif;
+}
+
+/* nav anchor items */
+.nav a {
+  display: block;
+  padding: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  color: #777777;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #4aaaa5;
+}
+
+/* main-content info to set background and other details */
+.main-content{
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-color:  #dddddd; 
+  /* padding-bottom: 10px; */
+}
+
+/* About Me Photo Specifics.*/
+.img-thumbnail  {
+  width: 200px;
+  height: auto;
+  margin: 5px 15px 5px 5px;
+  border: 1px solid #ccc;
+  float: left;
+  padding: 15px;
+  } 
+
+/* remove margin spacing under the labels on the contact form */
+label {
+  margin-bottom: 0px;
+}
+
+/* add margin spacing under the form-controls on the contact form */
+.form-control {
+  margin-bottom: 15px;
+}
+
+/* Portfolio tags to appear over images */
+.tag {
+  background-color: #4aaaa5;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+  position: absolute;
+  bottom: 1em;
+  left: 0em;
+  width: 100%;
+}
+
+
+/* Footer Styling Across the pages*/
+footer{
+border-top: 8px solid #4aaaa5;
+background-color: #000000;
+color: #ffffff;
+text-align: center;
+}
+
+
+
