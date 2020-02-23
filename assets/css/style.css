@@ -47,14 +47,14 @@ body {
   /* margin-top: 5em; */
   padding: 100px 0 0 0;
   min-height: 100vh;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/bg.png") repeat;
 }
 
 #portfolio {
   /* margin-top: 5em; */
   padding: 100px 0 0 0;
   min-height: 100vh;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/bg.png") repeat;
 }
 
 
@@ -146,11 +146,16 @@ text-align: center;
     text-align: center;
 }
 
+.navbar div.container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .navbar div.logo {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
 }
 
 .navbar div.logo a {
@@ -161,6 +166,11 @@ text-align: center;
 
 .navbar div.logo a:hover {
   color: #4aaaa5;
+}
+
+#mainListDiv {
+    position: absolute;
+    right: 20rem;
 }
 
 .navbar div.main_list {
@@ -175,6 +185,7 @@ text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: right;
 }
 
 .navbar div.main_list ul li {
@@ -189,7 +200,7 @@ text-align: center;
     text-decoration: none;
     color: #fff;
     line-height: 65px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     list-style: none;
 }
 
@@ -202,16 +213,14 @@ text-align: center;
 }
 
 /* Home section */
-
 .home {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    /* background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80); */
     background-image: url("../images/Aristotle-Quote.jpg");
-    background-position: center top;
-	  background-size:cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
 
 .navbar {
     padding-top: 20px;
@@ -230,8 +239,17 @@ text-align: center;
 }
 
 @media screen and (max-width:768px) {
+    .home {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../images/red-and-gold-300x91.png");
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .navbar div.logo {
-        margin-left: 15px;
+        margin-left: 0;
     }
     .navbar div.main_list {
         width: 100%;
@@ -409,22 +427,6 @@ text-align: center;
     background-color: black;
 }
 
-.myH2 {
-	text-align:center;
-	font-size: 4rem;
-}
-.myP {
-	text-align: justify;
-	padding-left:15%;
-	padding-right:15%;
-	font-size: 20px;
-}
-@media all and (max-width:700px){
-	.myP {
-		padding:2%;
-	}
-}
-
 .navbar div.main_list ul li a.active {
   color: #4aaaa5;
 }
@@ -436,7 +438,7 @@ text-align: center;
     /* margin-top: 5em; */
     padding: 100px 0 0 0;
     min-height: 100vh;
-    background: url("../images/concrete_seamless.png");
+    background: url("../images/bg.png") repeat;
 }
 
 .contact {
