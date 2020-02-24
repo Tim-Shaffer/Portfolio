@@ -8,13 +8,58 @@ body {
   background: url("../images/bg.png") repeat;
 }
 
-.header {
-  position: relative;
-  color: black;
-  text-align: center;
-}
+/* Set Heading Text Color  */
+h1 {
+    font-family:  Georgia, Times, "Times New Roman", serif;
+    font-size: 3rem;
+  } 
+  
+  h4 {
+      font-size: 1rem;
+    } 
+  
+  /* Set Paragraph Text Color  */
+  p {
+    color: #777777;
+  }
 
-.slide-in-left {
+.header {
+    position: relative;
+    color: black;
+    text-align: center;
+  }
+
+ /*----------------------------------------------------
+ Header Landing Page Styling
+------------------------------------------------------*/
+  .header-content {
+      background-image: url("../images/making_it_irish.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+      background-position: center;
+      display: table;
+  }
+  
+  .header-content h1 {
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 4rem;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  
+  .inner {
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%;
+      margin: 0 auto;
+  }
+
+/*----------------------------------------------------
+ CSS Animation for the section titles
+------------------------------------------------------*/
+  .slide-in-left {
   animation: slideMe 3s ease-in;
 }
 
@@ -42,21 +87,6 @@ body {
     100%{
         transform: skew(0deg);
     }
-}
-
-/* Set Heading Text Color  */
-h1 {
-  font-family:  Georgia, Times, "Times New Roman", serif;
-  font-size: 3rem;
-} 
-
-h4 {
-    font-size: 1rem;
-  } 
-
-/* Set Paragraph Text Color  */
-p {
-  color: #777777;
 }
 
 /* nav btn styling */
@@ -179,18 +209,6 @@ text-align: center;
 
 .nav-link {
   padding: 0;
-}
-
-/*----------------------------------------------------
- Home Styling
-------------------------------------------------------*/
-.home {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../images/Aristotle-Quote.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .navbar {
@@ -349,7 +367,6 @@ text-align: center;
  About Styling
 ------------------------------------------------------*/
 #about {
-    /* margin-top: 5em; */
     padding: 100px 0 0 0;
     min-height: 100vh;
 }
@@ -372,7 +389,6 @@ text-align: center;
  Project Styling
 ------------------------------------------------------*/
 #portfolio {
-    /* margin-top: 5em; */
     padding: 100px 0 0 0;
     min-height: 100vh;
 }
@@ -488,7 +504,6 @@ text-align: center;
  Contact Styling
 ------------------------------------------------------*/
 #contact {
-    /* margin-top: 5em; */
     padding: 100px 0 0 0;
     min-height: 100vh;
     background: url("../images/bg.png") repeat;
@@ -635,7 +650,7 @@ text-align: center;
 
 }
 
-/* Media qurey section */
+/* Media query section */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     
     .container {
@@ -646,13 +661,11 @@ text-align: center;
 
 @media screen and (max-width:768px) {
     
-    .home {
-        width: 100vw;
-        height: 100vh;
-        background-image: url("../images/red-and-gold-300x91.png");
-        background-position: center top;
-        background-size: cover;
-        background-repeat: no-repeat;
+    .header-content h1 {
+        color: white;
+        font-family: Georgia, serif;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
 
     .navbar div.logo {
@@ -696,6 +709,10 @@ text-align: center;
 
     .navbar div.media_button {
         display: block;
+    }
+
+    #about-main p{
+        float: right;
     }
     
 }
