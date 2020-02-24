@@ -657,6 +657,10 @@ text-align: center;
         margin: 0;
     }
 
+    #card-1 {
+        display: block;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -713,6 +717,11 @@ text-align: center;
 
     #about-main p{
         float: right;
+    }
+
+    /* hide the word guess project on smaller devices since it currently needs the spacebar to activate */
+    #card-1 {
+        display: none;
     }
     
 }
