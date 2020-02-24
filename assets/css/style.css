@@ -479,6 +479,11 @@ text-align: center;
     color: #4aaaa5;
 }
 
+.backside p{
+    font-size:13px;
+    line-height: 20px;
+}
+
 /*----------------------------------------------------
  Contact Styling
 ------------------------------------------------------*/
@@ -509,7 +514,6 @@ text-align: center;
 }
 .contact p {
 	color:#84868d;
-	/*font-size:13px;*/
 	line-height:18px;
 }
 .contact .heading p {
