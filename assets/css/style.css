@@ -44,19 +44,6 @@ body {
     }
 }
 
-#about {
-  /* margin-top: 5em; */
-  padding: 100px 0 0 0;
-  min-height: 100vh;
-}
-
-#portfolio {
-  /* margin-top: 5em; */
-  padding: 100px 0 0 0;
-  min-height: 100vh;
-}
-
-
 /* Set Heading Text Color  */
 h1 {
   font-family:  Georgia, Times, "Times New Roman", serif;
@@ -92,16 +79,6 @@ p {
   /* padding-bottom: 10px; */
 }
 
-/* About Me Photo Specifics.*/
-.img-thumbnail  {
-  width: 250px;
-  height: auto;
-  margin: 5px 15px 5px 5px;
-  border: 1px solid #ccc;
-  float: left;
-  padding: 15px;
-  } 
-
 /* remove margin spacing under the labels on the contact form */
 label {
   margin-bottom: 0px;
@@ -121,13 +98,14 @@ color: #ffffff;
 text-align: center;
 }
 
-
+/*----------------------------------------------------
+ Navbar Styling
+------------------------------------------------------*/
 /* Responsive Fixed Animated NavBar */
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
-
 /* Navbar section */
 .navbar {
     width: 100%;
@@ -203,7 +181,9 @@ text-align: center;
   padding: 0;
 }
 
-/* Home section */
+/*----------------------------------------------------
+ Home Styling
+------------------------------------------------------*/
 .home {
     width: 100vw;
     height: 100vh;
@@ -222,7 +202,6 @@ text-align: center;
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
 @-webkit-keyframes inM {
     50% {
         -webkit-transform: rotate(0deg);
@@ -365,6 +344,141 @@ text-align: center;
   color: #4aaaa5;
 }
 
+
+/*----------------------------------------------------
+ About Styling
+------------------------------------------------------*/
+#about {
+    /* margin-top: 5em; */
+    padding: 100px 0 0 0;
+    min-height: 100vh;
+}
+
+/* About Me Photo Specifics.*/
+.img-thumbnail  {
+    width: 250px;
+    height: auto;
+    margin: 5px 15px 5px 5px;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 15px;
+    } 
+
+#about a {
+    color: #4aaaa5;
+}
+
+/*----------------------------------------------------
+ Project Styling
+------------------------------------------------------*/
+#portfolio {
+    /* margin-top: 5em; */
+    padding: 100px 0 0 0;
+    min-height: 100vh;
+}
+
+/* Card Flipper */
+/* From - https://www.webnots.com/bootstrap/bootstrap-flip-cards.html */
+
+.image-flip:hover .backside, .image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+    
+.image-flip:hover .frontside, .image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+    
+.image-flip {
+    margin-bottom: 7em;
+    width: 20em;
+    height: 15em;
+}
+    
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+    
+.frontside, .backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+    
+.frontside {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+}
+    
+.backside {
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+    
+.card, .card-img-top {
+    border-radius: 0;
+}
+
+.card-deck .card {
+    width: initial;
+}
+
+
+.frontside .card-header {
+    text-align: center;
+    color: #4aaaa5;
+}
+
+.frontside p {
+    text-align: center;
+}
+
+.backside h4 {
+    text-align: center;
+}
+
+.backside .card-title{
+    color: #4aaaa5;
+}
+
+.backside a{
+    color: #4aaaa5;
+}
+
 /*----------------------------------------------------
  Contact Styling
 ------------------------------------------------------*/
@@ -439,13 +553,9 @@ text-align: center;
 	padding-right:15px;
 }
 
-/* .conform {
-    float: right;
-} */
-
 .conForm input {
 	background:#ffffff;
-	color:#897f8a;
+	color: #4aaaa5;
 	padding:15px 30px;
 	border:none;
 	margin-right:3%;
@@ -460,7 +570,7 @@ text-align: center;
 }
 .conForm textarea {
 	background:#ffffff;
-	color:#897f8a;
+	color: #4aaaa5;
 	padding:15px 30px;
 	margin-bottom:18px;
 	outline:none;
@@ -473,7 +583,7 @@ text-align: center;
 .conForm .submitBnt {
 	background:#ffffff;
 	font-family: 'Open Sans', sans-serif;
-	color:#5b4c5c;
+	color: #4aaaa5;
 	font-size:18px;
 	font-weight:bold;
 	text-align:center;
@@ -488,11 +598,27 @@ text-align: center;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
+
 .conForm .submitBnt:hover {
 	background:#5b4c5c;
 	color:#ffffff;
 }
 
+/* From w3schools - change placeholder color*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4aaaa5;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #4aaaa5;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #4aaaa5;
+}
+
+/* Media Actions */
 @media screen and (min-width: 768px) {
     
     .conForm input.col-sm-6 {
