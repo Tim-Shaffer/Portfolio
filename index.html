@@ -9,26 +9,27 @@
       
     <title>Tim Shaffer | Software Engineer</title>
       
-    <!-- Link for Bootstrap Styling -->
+    <!-- Link for Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Personal Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <!-- Link for jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Link for Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 
+    <!-- Link for BootStrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <!-- Place your fontawesome kit's code here -->
+    <!-- Link for fontawesome kit -->
     <script src="https://kit.fontawesome.com/728e60b7b4.js" crossorigin="anonymous"></script>
 
 </head>
@@ -71,7 +72,10 @@
             </div>
 
         </nav>
+        <!-- end of the NavBar -->
 
+        <!-- landing page section used to make scrolling possible -->
+        <!-- Responsive fixed navbar by Albi found at https://colorlib.com/wp/bootstrap-navbar/ -->
         <div class="header-content">
 
             <div class="inner">
@@ -96,17 +100,16 @@
             </div>
             
         </div>
+        <!-- end of header-content -->
 
     </header>
 
     <div>
 
-        <!-- <section class="home">
-
-        </section> -->
-
+        <!-- About Section -->
         <section id="about">
-            <!-- Main Content -->
+            
+            <!-- Keep a consistent Main Content -->
             <div class="container-sm main-content" id="about-main">
 
                 <div class="row p-3">
@@ -164,10 +167,12 @@
             </div>
 
         </section>
+        <!-- End of About Section -->
 
+        <!-- Project Section -->
         <section id="portfolio">
 
-            <!-- Main Content -->
+            <!-- Keep a consistent Main Content -->
             <div class="container-sm main-content" id="portfolio-main">
 
                 <div class="row p-4">
@@ -182,6 +187,7 @@
 
                 </div>
 
+                <!-- Card Deck for all of the projects -->
                 <div class="card-deck">
 
                     <!-- Card Flipper -->
@@ -398,11 +404,6 @@
                     </div>
                     <!-- End of Card 3 --> 
 
-                <!-- </div> -->
-                <!-- End of Card Deck -->
-
-                <!-- <div class="card-deck"> -->
-
                     <!-- Card 4 -->
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
 
@@ -596,11 +597,11 @@
                 
                                         <small class="text-muted">
                 
-                                            <a  href="https://tim-shaffer.github.io/Project-1//"
+                                            <a  href="https://tim-shaffer.github.io/TeamTravel/"
                                                 title="Travel with the Team" target="blank">Visit</a>
                 
                                             
-                                            <a  href="https://github.com/Tim-Shaffer/Project-1"
+                                            <a  href="https://github.com/Tim-Shaffer/TeamTravel"
                                                 title="View on GitHub" style="float: right" target="blank">
                                                 <img height="32" width="32" src="./assets/images/github.svg" /></a>
                 
@@ -629,7 +630,7 @@
         <!-- Contact Section -->
         <section class="contact" id="contact">
 
-            <!-- Main Content -->
+            <!-- Keep a consistent Main Content -->
             <div class="container-sm main-content" id="contact-main">
 
                 <div class="row p-3">
@@ -656,7 +657,7 @@
                                 <h4>Contact details</h4>
 
                                 <p> <i class="fa fa-map-marker"></i>Nicholson Ave Douglassville, PA 19518</p>
-                                <p> <i class="fa fa-mobile"></i>(610) 812 1793</p>
+                                <p> <i class="fa fa-mobile"></i>(610) 812 - 1793</p>
                                 <p> <i class="fa fa-envelope-o"></i> <a
                                         href="mailto:timothy.c.shaffer@gmail.com">timothy.c.shaffer@gmail.com</a></p>
 
@@ -712,9 +713,10 @@
                 <!--contact Details end-->
 
             </div>
+            <!-- Main Content End -->
 
         </section>
-        <!--contact end-->
+        <!-- End of Contact Section -->
 
     </div>
 
@@ -728,10 +730,9 @@
         </div>
     </footer>
 
-    <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- Function used to shrink nav bar removing paddings -->
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <!-- Responsive fixed navbar by Albi found at https://colorlib.com/wp/bootstrap-navbar/ -->
+    <!-- Tried to move to a js file but had issues so leaving for now until I can further troubleshoot -->
     <script>
         $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
