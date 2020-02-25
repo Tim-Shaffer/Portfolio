@@ -26,8 +26,8 @@ $("#submit").on("click", function(event) {
 
     // This line will grab the text from the input box and trim the spaces
     var contactName = capital_letter($("#name").val().trim());
-    var contactEM = capital_letter($("#email").val().trim());
-    var contactMsg = capital_letter($("#comments").val().trim());
+    var contactEM = $("#email").val().trim();
+    var contactMsg = $("#comments").val().trim();
 
     // after grabbing the information, remove it from the page 
     $("#name").val("");
