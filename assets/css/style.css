@@ -559,7 +559,7 @@ text-align: center;
 .conForm input {
 	background:#ffffff;
 	color: #4aaaa5;
-	padding:15px 30px;
+	/* padding:15px 30px; */
 	border:none;
 	margin-right:3%;
 	margin-bottom:18px;
@@ -574,7 +574,7 @@ text-align: center;
 .conForm textarea {
 	background:#ffffff;
 	color: #4aaaa5;
-	padding:15px 30px;
+	/* padding:15px 30px; */
 	margin-bottom:18px;
 	outline:none;
 	height:100px;
