@@ -658,10 +658,10 @@
 
                                 <p> <i class="fa fa-map-marker"></i>Nicholson Ave Douglassville, PA 19518</p>
                                 <p> <i class="fa fa-mobile"></i>(610) 812 - 1793</p>
-                                <p> <i class="fa fa-envelope-o"></i> <a
+                                <!-- <p> <i class="fa fa-envelope-o"></i> <a
                                         href="mailto:timothy.c.shaffer@gmail.com">timothy.c.shaffer@gmail.com</a></p>
 
-                                <p>
+                                <p> -->
                                     <!-- <i class="fa fa-linkedin"></i> -->
                                     <img height="32" width="32" src="./assets/images/linkedin.svg" />
                                     <a href="https://www.linkedin.com/in/shaffer-tim/" target="blank"> Connect on
@@ -686,19 +686,17 @@
                                 <form method="post" action="php/contact.php" name="cform" id="cform">
 
                                     <input name="name" id="name" type="text"
-                                        class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name...">
+                                        class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." required>
 
                                     <input name="email" id="email" type="email"
                                         class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr"
-                                        placeholder="Your email...">
+                                        placeholder="Your email..." required>
 
                                     <textarea name="comments" id="comments" cols="" rows=""
                                         class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-                                        placeholder="Your message..."></textarea>
+                                        placeholder="Your message..." required></textarea>
 
-                                    <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
-
-                                    <div id="simple-msg"></div>
+                                    <input type="submit" id="submit" name="send" class="submitBtn" value="Send">
 
                                 </form>
 
