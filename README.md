@@ -8,6 +8,7 @@
 * CSS
 * Bootstrap
 * jQuery
+* FireBase
 
 
 
