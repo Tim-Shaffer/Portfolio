@@ -1,4 +1,14 @@
 # Portfolio
 
-## Default Page - index.html
-* Link directly to the published page here: https://tim-shaffer.github.io/Portfolio/
+## Business Portfolio of Tim Shaffer
+* Link directly here: https://tim-shaffer.github.io/Portfolio/
+
+## Tech Used
+* HTML 
+* CSS
+* Bootstrap
+* jQuery
+
+
+
+
