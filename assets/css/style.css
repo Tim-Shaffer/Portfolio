@@ -449,8 +449,9 @@ text-align: center;
     transform: rotateY(-180deg);
 }
     
-.card, .card-img-top {
+.card .card-img-top {
     border-radius: 0;
+    height: 230px;
 }
 
 .card-deck .card {
@@ -482,6 +483,10 @@ text-align: center;
 .backside p{
     font-size:13px;
     line-height: 20px;
+}
+
+.backside.card-body {
+    height: 295px;
 }
 
 /*----------------------------------------------------
