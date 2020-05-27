@@ -401,15 +401,16 @@ text-align: center;
     height: 15em; 
 }
     
+/* Main Card Container */
 .mainflip {
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     -webkit-transform-style: preserve-3d;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
+    -ms-transition: 2s;
+    -moz-transition: 2s;
     -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
-    transition: 1s;
+    transition: 2s;
     transform-style: preserve-3d;
     position: relative;
 }
@@ -419,15 +420,15 @@ text-align: center;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transition: 1s;
+    -webkit-transition: 2s;
     -webkit-transform-style: preserve-3d;
-    -moz-transition: 1s;
+    -moz-transition: 2s;
     -moz-transform-style: preserve-3d;
-    -o-transition: 1s;
+    -o-transition: 2s;
     -o-transform-style: preserve-3d;
-    -ms-transition: 1s;
+    -ms-transition: 2s;
     -ms-transform-style: preserve-3d;
-    transition: 1s;
+    transition: 2s;
     transform-style: preserve-3d;
     position: absolute;
     top: 0;
